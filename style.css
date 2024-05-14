@@ -1,0 +1,103 @@
+body{
+    background-color:black;
+    color: rgb(245, 245, 245);
+    font-family: "Playfair Display", serif;
+}
+
+.conteudo{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ .titulo{
+    text-align: left;
+    width: 100%;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-size: large;
+ }
+
+ .titulo span{
+    color: rgb(5, 241, 84);
+ }
+
+ .botao{
+    font-family: "Playfair Display", serif;
+    background-color:rgb(17, 41, 110);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid rgb(233, 233, 233);
+    border-left: 2px solid rgb(5, 5, 114);
+    border-right: 2px solid rgb(5, 5, 114);
+    border-top: none;
+    
+ }
+ .botao:first-child{
+   border-radius: 40px 40px 0px 0px;
+ }
+ .botoes{
+   display: block;
+ }
+ .ativo.botao{
+   background-color:rgb(196, 196, 255);
+   border-bottom: 4px solid rgb(2, 255, 116);
+   color: black;
+ }
+ .abas{
+  background-color:rgb(46, 46, 131);
+  color: aliceblue;
+  text-align: center;
+  padding:40px ;
+  border-radius: 0px 0px 40px 40px;
+
+ }
+ .tempo{
+  color: rgb(41, 228, 103);
+ }
+ .ativo.textos{
+  display: block;
+ }
+.textos {
+  display: none;
+}
+.contador{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contador-digito{
+  padding: 0 16px;
+  font-size: 20px;
+  color: rgb(41, 180, 76);
+  min-width: 100px;
+}
+.contador-numero{
+  font-size: 70px;
+  margin: 0;
+  color: rgb(0, 0, 0);
+}
+
+ @media screen and (min-width: 798px) 
+ {
+  .botoes{
+    display: flex;
+    }
+    .botao:first-child{
+       border-radius: 40px 0px 0px 0px;
+    
+     }
+     .botao:last-child{
+       border-radius: 0px 40px 0px 0px;
+    
+     }
+
+}
